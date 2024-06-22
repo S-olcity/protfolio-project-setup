@@ -5,12 +5,17 @@
   --d-font-family: "Poppins", sans-serif;
 }
 h1 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--h-font-family);
   font-style: normal;
+  line-height: 1.5;
 }
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--d-font-family);
   font-weight: normal;
+  font-size:16px;
+  text-align:center;
+  line-height: 1.7;
+  opacity: 0.7;
 }
 .main {
   background: #f9f7fe;
@@ -35,10 +40,43 @@ p {
   color: white;
   border: 2px solid var(--secondary-color);
   border-radius: 4px;
-  padding: 15px 20px;
+  padding: 15px 30px;
   text-align:center;
  
 }
 .btn{
       margin-top:30px;
+}
+h2{
+      font-size:64px;
+}
+.btn-element-two{
+background:white;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  padding: 15px 20px;
+  text-align:center;  
+}
+.separation{
+      padding:100px 60px;
+}
+@media(max-width:960px){
+      .container{
+            text-align:center;
+      }
+.separation{
+      padding:0;
+      text-align:center;
+}
+h1{
+      font-size:50px;
+      line-height:2;
+}
+h2{
+      font-size:44px;
+}
+.container{
+      display:block;
+}
 }
